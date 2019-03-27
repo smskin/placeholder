@@ -1,0 +1,25 @@
+version: '2'
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - php-fpm
+    volumes_from:
+      - php-fpm
+    networks:
+      - local
+  php-fpm:
+    build:
+      context: ..
+      dockerfile: ./docker/php-fpm/Dockerfile
+    restart: always
+    volumes:
+#      - ./..:/var/www #uncomment for debug on local
+      - ./php-fpm/app/public/storage:/var/www/public/storage
+    networks:
+      - local
+networks:
+  local:
+    driver: bridge

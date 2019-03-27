@@ -1,0 +1,1 @@
+docker exec -it placeholder_php-fpm_1 bash

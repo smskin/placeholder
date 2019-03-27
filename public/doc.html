@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+</head>
+<body>
+    <h1>Service for generation placeholder images</h1>
+    <p>Available params:</p>
+    <ul>
+        <li>txt - Text</li>
+        <li>txtsize - Text font size</li>
+        <li>txtcolor - Text font color (in dex format, without #)</li>
+        <li>w - Canvas width</li>
+        <li>h - Canvas height</li>
+        <li>bgcolor - Canvas background color (in dex format, without #)</li>
+    </ul>
+    <p>Examples:</p>
+    <table border="0">
+        <tr>
+            <td valign="middle" align="center">
+                <img src="/" alt="Default params" />
+            </td>
+            <td valign="middle" align="left">
+                Params: <br />
+                txt = placeholder<br />
+                txtsize = 14<br />
+                txtcolor = ffffff <br />
+                w = 300 <br />
+                h = 300 <br />
+                bgcolor = 00000
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center">
+                <img src="/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d" alt="Generated image" />
+            </td>
+            <td valign="middle" align="left">
+                Params: <br />
+                txt = test<br />
+                txtsize = 20<br />
+                txtcolor = 57b0ff <br />
+                w = 200 <br />
+                h = 200 <br />
+                bgcolor = 79553d
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

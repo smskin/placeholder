@@ -1,0 +1,5 @@
+public/storage
+docker/php-fpm/app
+.idea
+composer.lock
+vendor
