@@ -3,3 +3,4 @@ docker/php-fpm/app
 .idea
 composer.lock
 vendor
+docker/.env
