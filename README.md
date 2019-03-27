@@ -13,10 +13,9 @@ The service generates an image based on the passed parameters:
 - h - Canvas height
 - bgcolor - Canvas background color (in dex format, without #)
 
-Examples:
+Example of request:
 ```
 GET http://localhost/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d
-GET http://placeholder.cf/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d
 ```
 
 Attention!
@@ -27,3 +26,8 @@ example:
 ```chown www-data:www-data -R ~/docker/php-fpm/app/public/storage```
 You can find the directory using the command:
 ```find / -type d -name 'app'```
+
+Example of a deployed service:
+```
+http://placeholder.cf/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d
+```
