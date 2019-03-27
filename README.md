@@ -15,7 +15,7 @@ The service generates an image based on the passed parameters:
 
 Examples:
 ```
-GET http://localhost/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d
+GET http://placeholder.cf/?txt=test&txtsize=20&txtcolor=57b0ff&w=200&h=200&bgcolor=79553d
 ```
 
 Attention!
